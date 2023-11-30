@@ -112,13 +112,13 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                             CONF_DISTANCE_UNIT_OVERRIDE_DEFAULT,
                         ),
                     ): vol.In(DISTANCE_UNIT_OVERRIDE_OPTIONS),
-                    vol.Optional(
-                        CONF_GEOCODE_XYZ_API_KEY,
-                        default=ha_strava_config_entries[0].options.get(
-                            CONF_GEOCODE_XYZ_API_KEY,
-                            None,
-                        ),
-                    ): str,
+#                    vol.Optional(
+#                        CONF_GEOCODE_XYZ_API_KEY,
+#                        default=ha_strava_config_entries[0].options.get(
+#                            CONF_GEOCODE_XYZ_API_KEY,
+#                            None,
+#                        ),
+#                    ): str,
                 }
             ),
         )
